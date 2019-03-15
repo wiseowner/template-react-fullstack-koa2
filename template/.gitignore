@@ -1,0 +1,9 @@
+node_modules
+.vscode
+yarn-error.log
+mock
+doc
+.vscode/
+.idea
+public
+.DS_Store

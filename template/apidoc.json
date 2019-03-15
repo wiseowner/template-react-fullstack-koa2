@@ -1,0 +1,9 @@
+{
+  "name": "<%= context.basic.name %>",
+  "version": "1.0.0",
+  "description": "<%= context.basic.name %> 项目API文档",
+  "title": "koa-server API",
+  "url": "http://10.95.118.75:3008",
+  "sampleUrl": "http://10.95.118.75:3008",
+  "forceLanguage": "zh-cn"
+}

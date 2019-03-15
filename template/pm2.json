@@ -1,0 +1,23 @@
+{
+  "apps": [{
+    "name": "<%= context.basic.name %>",
+    "script": "./Backend/bin/www",
+    "merge_logs": true,
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    },
+    "env_staging": {
+      "NODE_ENV": "staging",
+      "TEST": true
+    },
+    "instances": 4,
+    "max_memory_restart": "300M",
+    "exec_mode": "cluster_mode",
+    "error_file": "/home/<%= context.basic.name %>/logs/app-err.log",
+    "out_file": "/home/<%= context.basic.name %>/logs/app-out.log",
+    "pid_file": "/home/<%= context.basic.name %>/app.pid"
+  }]
+}
